@@ -13,6 +13,8 @@
 		43D1806823F6BEE0009A7D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D1806623F6BEE0009A7D17 /* Main.storyboard */; };
 		43D1806A23F6BEE2009A7D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D1806923F6BEE2009A7D17 /* Assets.xcassets */; };
 		43D1806D23F6BEE2009A7D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D1806B23F6BEE2009A7D17 /* LaunchScreen.storyboard */; };
+		43D1807523F6C21A009A7D17 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1807423F6C21A009A7D17 /* Dice.swift */; };
+		43D1807723F6C5AD009A7D17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1807623F6C5AD009A7D17 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		43D1806923F6BEE2009A7D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43D1806C23F6BEE2009A7D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43D1806E23F6BEE2009A7D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D1807423F6C21A009A7D17 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		43D1807623F6C5AD009A7D17 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				43D1806023F6BEE0009A7D17 /* AppDelegate.swift */,
+				43D1807423F6C21A009A7D17 /* Dice.swift */,
+				43D1807623F6C5AD009A7D17 /* Player.swift */,
 				43D1806223F6BEE0009A7D17 /* SceneDelegate.swift */,
 				43D1806423F6BEE0009A7D17 /* ViewController.swift */,
 				43D1806623F6BEE0009A7D17 /* Main.storyboard */,
@@ -140,6 +146,8 @@
 			files = (
 				43D1806523F6BEE0009A7D17 /* ViewController.swift in Sources */,
 				43D1806123F6BEE0009A7D17 /* AppDelegate.swift in Sources */,
+				43D1807523F6C21A009A7D17 /* Dice.swift in Sources */,
+				43D1807723F6C5AD009A7D17 /* Player.swift in Sources */,
 				43D1806323F6BEE0009A7D17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
