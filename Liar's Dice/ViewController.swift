@@ -12,6 +12,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBOutlet weak var typeOfDicePicker: UIPickerView!
     @IBOutlet weak var numberOfDicePicker: UIPickerView!
+    @IBOutlet weak var betButton: UIButton!
     
     var numberOfDicePickerData: [String] = [String]()
     var typeOfDicePickerData: [String] = [String]()
@@ -50,6 +51,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        betButton.layer.cornerRadius = 5
         
         // Connect data:
         self.typeOfDicePicker.delegate = self
