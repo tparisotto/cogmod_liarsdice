@@ -35,8 +35,6 @@ class ViewController: UIViewController {
         self.numberOfDicePicker.dataSource = numberOfDicePickerAdapter
         self.numberOfDicePicker.setValue(UIColor.white, forKeyPath: "textColor")
         
-    }
-
 
 }
 
