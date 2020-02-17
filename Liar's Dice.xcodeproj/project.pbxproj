@@ -28,6 +28,7 @@
 		43D1806E23F6BEE2009A7D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43D1807423F6C21A009A7D17 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 		43D1807623F6C5AD009A7D17 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DA54C82423FABB7A004D57A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		43D1805423F6BEE0009A7D17 = {
 			isa = PBXGroup;
 			children = (
+				DA54C82423FABB7A004D57A9 /* README.md */,
 				43D1805F23F6BEE0009A7D17 /* Liar's Dice */,
 				43D1805E23F6BEE0009A7D17 /* Products */,
 			);
