@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let matrix: [[Double]] = computeProbabilityMatrix(hand: [2,4,4,6], diceInGame: 12)
+        print(matrix)
     }
 
 
