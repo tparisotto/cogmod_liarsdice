@@ -35,26 +35,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-1G-egc">
                                 <rect key="frame" x="49" y="379" width="208" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gDh-c0-kF9">
-                                <rect key="frame" x="49" y="56" width="208" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice-six-faces-five" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-N1-fC9">
-                                <rect key="frame" x="157" y="291" width="100" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-EA-1ys">
-                                <rect key="frame" x="49" y="303" width="100" height="37"/>
+                                <rect key="frame" x="49" y="291" width="100" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice-six-faces-five" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-N1-fC9">
+                                <rect key="frame" x="157" y="291" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gDh-c0-kF9">
+                                <rect key="frame" x="49" y="76.5" width="208" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.001196428096229939" green="0.38628251903553301" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -62,8 +62,8 @@
                         <outlet property="numberOfDicePicker" destination="Qu4-tc-4qS" id="RmM-57-GM2"/>
                         <outlet property="opponentBetNumberOfDiceView" destination="gUg-EA-1ys" id="GfR-gH-fA3"/>
                         <outlet property="opponentBetTypeOfDiceView" destination="Jcn-N1-fC9" id="YvR-sf-bnD"/>
-                        <outlet property="opponentHandView" destination="gDh-c0-kF9" id="z9n-kE-Fl9"/>
-                        <outlet property="playerHandView" destination="d2k-1G-egc" id="qhi-kL-iW3"/>
+                        <outlet property="opponentCupView" destination="gDh-c0-kF9" id="z9n-kE-Fl9"/>
+                        <outlet property="playerCupView" destination="d2k-1G-egc" id="qhi-kL-iW3"/>
                         <outlet property="typeOfDicePicker" destination="Q7Q-UU-gcf" id="FZu-Hf-hCX"/>
                     </connections>
                 </viewController>
