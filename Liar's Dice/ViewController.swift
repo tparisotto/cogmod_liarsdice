@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var typeOfDicePicker: UIPickerView!
     @IBOutlet weak var numberOfDicePicker: UIPickerView!
     @IBOutlet weak var betButton: UIButton!
-    @IBOutlet weak var calBluffButton: UIButton!
+    @IBOutlet weak var callBluffButton: UIButton!
     @IBOutlet weak var playerCupView: UIImageView!
     @IBOutlet weak var opponentCupView: UIImageView!
     @IBOutlet weak var opponentBetTypeOfDiceView: UIImageView!
@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         
         // Aesthetic stuff
         betButton.layer.cornerRadius = 5
+        callBluffButton.layer.cornerRadius = 5
         
         // Connect data:
         self.typeOfDicePicker.delegate = typeOfDicePickerAdapter
