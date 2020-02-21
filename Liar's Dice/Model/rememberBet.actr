@@ -1,0 +1,20 @@
+;; rememberBet for a model
+
+(add-dm
+    (bet6_6 isa bet_instance player dicenumber dicevalue)
+    (bluff isa bluff_instance dicenumber dicevalue)
+
+)
+
+
+(p remember-bet
+    =goal>
+    isa goal
+    state
+    player  =player
+    dicenumber =dicenumber
+    dicevalue =dicevalue
+==>
+    state retrieve
+    bluff =
+)
