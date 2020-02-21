@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var typeOfDicePicker: UIPickerView!
     @IBOutlet weak var numberOfDicePicker: UIPickerView!
     @IBOutlet weak var betButton: UIButton!
+    let typeOfDicePickerAdapter = TypeOfDicePickerViewDelegateAndDataSource()
+    let numberOfDicePickerAdapter = NumberOfDicePickerViewDelegateAndDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +24,12 @@ class ViewController: UIViewController {
         
         // Normally the delegate and data source would be implemented in this controller but we need 2 of each
         
-        let typeOfDicePickerAdapter = TypeOfDicePickerViewDelegateAndDataSource()
         print(typeOfDicePickerAdapter.pickerView(numberOfDicePicker, numberOfRowsInComponent: 10))
         // Connect data:
         self.typeOfDicePicker.delegate = typeOfDicePickerAdapter
         self.typeOfDicePicker.dataSource = typeOfDicePickerAdapter
         self.typeOfDicePicker.setValue(UIColor.white, forKeyPath: "textColor")
         
-        let numberOfDicePickerAdapter = NumberOfDicePickerViewDelegateAndDataSource()
         // Connect data:
         self.numberOfDicePicker.delegate = numberOfDicePickerAdapter
         self.numberOfDicePicker.dataSource = numberOfDicePickerAdapter
