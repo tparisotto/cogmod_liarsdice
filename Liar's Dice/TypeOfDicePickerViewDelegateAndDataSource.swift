@@ -13,18 +13,42 @@ class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate,
     //TODO: this will have to use dice images
     var typeOfDicePickerData = ["1", "2", "3", "4", "5", "6"]
     
-    // the number of columns of data
+    var imageArray = [UIImage]()
+    
+    override init() {
+        imageArray.append(UIImage(named: "dice-six-faces-one")!)
+        imageArray.append(UIImage(named: "dice-six-faces-two")!)
+        imageArray.append(UIImage(named: "dice-six-faces-three")!)
+        imageArray.append(UIImage(named: "dice-six-faces-four")!)
+        imageArray.append(UIImage(named: "dice-six-faces-five")!)
+        imageArray.append(UIImage(named: "dice-six-faces-six")!)
+    }
+        
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
-    // the number of rows of data
+
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return typeOfDicePickerData.count
+        return 2
     }
-    
-    // The data to return fopr the row and component (column) that's being passed in
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return typeOfDicePickerData[row]
+
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 60
+    }
+
+
+    // MARK: UIPickerViewDelegate
+
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+
+        let myImageView = UIImageView(image: imageArray[row])
+        myImageView.contentMode = UIView.ContentMode.scaleAspectFit;
+
+        return myImageView
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+
+       // do something with selected row
     }
 }
