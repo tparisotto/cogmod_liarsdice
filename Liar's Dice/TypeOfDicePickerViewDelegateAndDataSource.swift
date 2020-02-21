@@ -36,7 +36,8 @@ class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate,
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 
         let myImageView = UIImageView(image: imageArray[row])
-        myImageView.contentMode = UIView.ContentMode.scaleAspectFit;
+        myImageView.frame.size = CGSize(width: 60, height: 60)
+        myImageView.contentMode = UIView.ContentMode.scaleAspectFill;
 
         return myImageView
     }
