@@ -19,13 +19,11 @@ class NumberOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegat
     
     // the number of rows of data
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        print("hi")
         return numberOfDicePickerData.count
     }
     
-    // The data to return fopr the row and component (column) that's being passed in
+    // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        print("hi")
         return numberOfDicePickerData[row]
     }
 }

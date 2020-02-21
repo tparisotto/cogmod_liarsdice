@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var typeOfDicePicker: UIPickerView!
     @IBOutlet weak var numberOfDicePicker: UIPickerView!
     @IBOutlet weak var betButton: UIButton!
+    @IBOutlet weak var playerHandView: UIImageView!
+    @IBOutlet weak var opponentHandView: UIImageView!
+    @IBOutlet weak var opponentBetTypeOfDiceView: UIImageView!
+    @IBOutlet weak var opponentBetNumberOfDiceView: UILabel!
+    
     let typeOfDicePickerAdapter = TypeOfDicePickerViewDelegateAndDataSource()
     let numberOfDicePickerAdapter = NumberOfDicePickerViewDelegateAndDataSource()
 
@@ -34,6 +39,9 @@ class ViewController: UIViewController {
         self.numberOfDicePicker.delegate = numberOfDicePickerAdapter
         self.numberOfDicePicker.dataSource = numberOfDicePickerAdapter
         self.numberOfDicePicker.setValue(UIColor.white, forKeyPath: "textColor")
+        
+        self.opponentBetNumberOfDiceView.text = "3"
+        self.opponentBetTypeOfDiceView = UIImageView(image: UIImage(named: "dice-six-faces-six")!)
     }
 
 }
