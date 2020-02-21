@@ -17,6 +17,7 @@
 		43D1807723F6C5AD009A7D17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1807623F6C5AD009A7D17 /* Player.swift */; };
 		DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */; };
 		DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */; };
+		EA21902C23FAC92E001CA86F /* ACTRWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,24 @@
 		DA54C82423FABB7A004D57A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
 		DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
+		EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ACTRWindowView.swift; path = "../../ACT-R/Prisoner's Dilemma/ACTRWindowView.swift"; sourceTree = "<group>"; };
+		EA21903B23FAC93A001CA86F /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		EA21903C23FAC93A001CA86F /* BufferAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferAction.swift; sourceTree = "<group>"; };
+		EA21903D23FAC93A001CA86F /* SlotCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCondition.swift; sourceTree = "<group>"; };
+		EA21903E23FAC93A001CA86F /* Procedural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedural.swift; sourceTree = "<group>"; };
+		EA21903F23FAC93A001CA86F /* Temporal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporal.swift; sourceTree = "<group>"; };
+		EA21904023FAC93B001CA86F /* SlotAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAction.swift; sourceTree = "<group>"; };
+		EA21904123FAC93B001CA86F /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		EA21904223FAC93B001CA86F /* Instantiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiation.swift; sourceTree = "<group>"; };
+		EA21904323FAC93B001CA86F /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		EA21904423FAC93B001CA86F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EA21904523FAC93B001CA86F /* Production.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Production.swift; sourceTree = "<group>"; };
+		EA21904623FAC93B001CA86F /* BufferCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferCondition.swift; sourceTree = "<group>"; };
+		EA21904723FAC93B001CA86F /* FocusRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusRing.swift; sourceTree = "<group>"; };
+		EA21904823FAC93B001CA86F /* Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declarative.swift; sourceTree = "<group>"; };
+		EA21904923FAC93B001CA86F /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		EA21904A23FAC93B001CA86F /* ACTRWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTRWindowView.swift; sourceTree = "<group>"; };
+		EA21904B23FAC93B001CA86F /* Chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chunk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +85,9 @@
 		43D1805F23F6BEE0009A7D17 /* Liar's Dice */ = {
 			isa = PBXGroup;
 			children = (
+				EA21901823FAC8C3001CA86F /* Core ACT-R */,
 				43D1806023F6BEE0009A7D17 /* AppDelegate.swift */,
-				43D1807423F6C21A009A7D17 /* Dice.swift */,
-				43D1807623F6C5AD009A7D17 /* Player.swift */,
+				EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */,
 				43D1806223F6BEE0009A7D17 /* SceneDelegate.swift */,
 				43D1806423F6BEE0009A7D17 /* ViewController.swift */,
 				DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */,
@@ -79,6 +98,32 @@
 				43D1806E23F6BEE2009A7D17 /* Info.plist */,
 			);
 			path = "Liar's Dice";
+			sourceTree = "<group>";
+		};
+		EA21901823FAC8C3001CA86F /* Core ACT-R */ = {
+			isa = PBXGroup;
+			children = (
+				EA21904A23FAC93B001CA86F /* ACTRWindowView.swift */,
+				EA21903C23FAC93A001CA86F /* BufferAction.swift */,
+				EA21904623FAC93B001CA86F /* BufferCondition.swift */,
+				EA21904B23FAC93B001CA86F /* Chunk.swift */,
+				EA21904823FAC93B001CA86F /* Declarative.swift */,
+				EA21904723FAC93B001CA86F /* FocusRing.swift */,
+				EA21904223FAC93B001CA86F /* Instantiation.swift */,
+				EA21904423FAC93B001CA86F /* Model.swift */,
+				EA21904323FAC93B001CA86F /* Parser.swift */,
+				EA21903E23FAC93A001CA86F /* Procedural.swift */,
+				EA21904523FAC93B001CA86F /* Production.swift */,
+				EA21904023FAC93B001CA86F /* SlotAction.swift */,
+				EA21903D23FAC93A001CA86F /* SlotCondition.swift */,
+				EA21904123FAC93B001CA86F /* Support.swift */,
+				EA21903F23FAC93A001CA86F /* Temporal.swift */,
+				EA21904923FAC93B001CA86F /* Tokenizer.swift */,
+				EA21903B23FAC93A001CA86F /* Vision.swift */,
+				43D1807423F6C21A009A7D17 /* Dice.swift */,
+				43D1807623F6C5AD009A7D17 /* Player.swift */,
+			);
+			path = "Core ACT-R";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA21902C23FAC92E001CA86F /* ACTRWindowView.swift in Sources */,
 				43D1806523F6BEE0009A7D17 /* ViewController.swift in Sources */,
 				DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */,
 				43D1806123F6BEE0009A7D17 /* AppDelegate.swift in Sources */,
