@@ -17,7 +17,6 @@
 		43D1807723F6C5AD009A7D17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1807623F6C5AD009A7D17 /* Player.swift */; };
 		DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */; };
 		DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */; };
-		EA21902C23FAC92E001CA86F /* ACTRWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,7 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA21902C23FAC92E001CA86F /* ACTRWindowView.swift in Sources */,
 				43D1806523F6BEE0009A7D17 /* ViewController.swift in Sources */,
 				DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */,
 				43D1806123F6BEE0009A7D17 /* AppDelegate.swift in Sources */,

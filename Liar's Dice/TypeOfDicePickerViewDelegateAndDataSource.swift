@@ -9,10 +9,7 @@
 import UIKit
 
 class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate, UIPickerViewDataSource  {
-    
-    //TODO: this will have to use dice images
-    var typeOfDicePickerData = ["1", "2", "3", "4", "5", "6"]
-    
+        
     var imageArray = [UIImage]()
     
     override init() {
@@ -29,15 +26,12 @@ class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate,
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 2
+        return 6
     }
 
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 60
     }
-
-
-    // MARK: UIPickerViewDelegate
 
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 
