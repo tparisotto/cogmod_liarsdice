@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43D1806123F6BEE0009A7D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1806023F6BEE0009A7D17 /* AppDelegate.swift */; };
+		43D1806323F6BEE0009A7D17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1806223F6BEE0009A7D17 /* SceneDelegate.swift */; };
+		43D1806523F6BEE0009A7D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1806423F6BEE0009A7D17 /* ViewController.swift */; };
+		43D1806823F6BEE0009A7D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D1806623F6BEE0009A7D17 /* Main.storyboard */; };
+		43D1806A23F6BEE2009A7D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D1806923F6BEE2009A7D17 /* Assets.xcassets */; };
+		43D1806D23F6BEE2009A7D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D1806B23F6BEE2009A7D17 /* LaunchScreen.storyboard */; };
+		43D1807523F6C21A009A7D17 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1807423F6C21A009A7D17 /* Dice.swift */; };
+		43D1807723F6C5AD009A7D17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1807623F6C5AD009A7D17 /* Player.swift */; };
+		DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */; };
+		DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */; };
+		EA21902C23FAC92E001CA86F /* ACTRWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43D1805D23F6BEE0009A7D17 /* Liar's Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liar's Dice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D1806023F6BEE0009A7D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43D1806223F6BEE0009A7D17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43D1806423F6BEE0009A7D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43D1806723F6BEE0009A7D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43D1806923F6BEE2009A7D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43D1806C23F6BEE2009A7D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43D1806E23F6BEE2009A7D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D1807423F6C21A009A7D17 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		43D1807623F6C5AD009A7D17 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DA54C82423FABB7A004D57A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
+		DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
+		EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ACTRWindowView.swift; path = "../../ACT-R/Prisoner's Dilemma/ACTRWindowView.swift"; sourceTree = "<group>"; };
+		EA21903B23FAC93A001CA86F /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		EA21903C23FAC93A001CA86F /* BufferAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferAction.swift; sourceTree = "<group>"; };
+		EA21903D23FAC93A001CA86F /* SlotCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCondition.swift; sourceTree = "<group>"; };
+		EA21903E23FAC93A001CA86F /* Procedural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedural.swift; sourceTree = "<group>"; };
+		EA21903F23FAC93A001CA86F /* Temporal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporal.swift; sourceTree = "<group>"; };
+		EA21904023FAC93B001CA86F /* SlotAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAction.swift; sourceTree = "<group>"; };
+		EA21904123FAC93B001CA86F /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		EA21904223FAC93B001CA86F /* Instantiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiation.swift; sourceTree = "<group>"; };
+		EA21904323FAC93B001CA86F /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		EA21904423FAC93B001CA86F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EA21904523FAC93B001CA86F /* Production.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Production.swift; sourceTree = "<group>"; };
+		EA21904623FAC93B001CA86F /* BufferCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferCondition.swift; sourceTree = "<group>"; };
+		EA21904723FAC93B001CA86F /* FocusRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusRing.swift; sourceTree = "<group>"; };
+		EA21904823FAC93B001CA86F /* Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declarative.swift; sourceTree = "<group>"; };
+		EA21904923FAC93B001CA86F /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		EA21904A23FAC93B001CA86F /* ACTRWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTRWindowView.swift; sourceTree = "<group>"; };
+		EA21904B23FAC93B001CA86F /* Chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chunk.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43D1805A23F6BEE0009A7D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43D1805423F6BEE0009A7D17 = {
+			isa = PBXGroup;
+			children = (
+				DA54C82423FABB7A004D57A9 /* README.md */,
+				43D1805F23F6BEE0009A7D17 /* Liar's Dice */,
+				43D1805E23F6BEE0009A7D17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43D1805E23F6BEE0009A7D17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43D1805D23F6BEE0009A7D17 /* Liar's Dice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43D1805F23F6BEE0009A7D17 /* Liar's Dice */ = {
+			isa = PBXGroup;
+			children = (
+				EA21901823FAC8C3001CA86F /* Core ACT-R */,
+				43D1806023F6BEE0009A7D17 /* AppDelegate.swift */,
+				EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */,
+				43D1806223F6BEE0009A7D17 /* SceneDelegate.swift */,
+				43D1806423F6BEE0009A7D17 /* ViewController.swift */,
+				DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */,
+				DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */,
+				43D1806623F6BEE0009A7D17 /* Main.storyboard */,
+				43D1806923F6BEE2009A7D17 /* Assets.xcassets */,
+				43D1806B23F6BEE2009A7D17 /* LaunchScreen.storyboard */,
+				43D1806E23F6BEE2009A7D17 /* Info.plist */,
+			);
+			path = "Liar's Dice";
+			sourceTree = "<group>";
+		};
+		EA21901823FAC8C3001CA86F /* Core ACT-R */ = {
+			isa = PBXGroup;
+			children = (
+				EA21904A23FAC93B001CA86F /* ACTRWindowView.swift */,
+				EA21903C23FAC93A001CA86F /* BufferAction.swift */,
+				EA21904623FAC93B001CA86F /* BufferCondition.swift */,
+				EA21904B23FAC93B001CA86F /* Chunk.swift */,
+				EA21904823FAC93B001CA86F /* Declarative.swift */,
+				EA21904723FAC93B001CA86F /* FocusRing.swift */,
+				EA21904223FAC93B001CA86F /* Instantiation.swift */,
+				EA21904423FAC93B001CA86F /* Model.swift */,
+				EA21904323FAC93B001CA86F /* Parser.swift */,
+				EA21903E23FAC93A001CA86F /* Procedural.swift */,
+				EA21904523FAC93B001CA86F /* Production.swift */,
+				EA21904023FAC93B001CA86F /* SlotAction.swift */,
+				EA21903D23FAC93A001CA86F /* SlotCondition.swift */,
+				EA21904123FAC93B001CA86F /* Support.swift */,
+				EA21903F23FAC93A001CA86F /* Temporal.swift */,
+				EA21904923FAC93B001CA86F /* Tokenizer.swift */,
+				EA21903B23FAC93A001CA86F /* Vision.swift */,
+				43D1807423F6C21A009A7D17 /* Dice.swift */,
+				43D1807623F6C5AD009A7D17 /* Player.swift */,
+			);
+			path = "Core ACT-R";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43D1805C23F6BEE0009A7D17 /* Liar's Dice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D1807123F6BEE2009A7D17 /* Build configuration list for PBXNativeTarget "Liar's Dice" */;
+			buildPhases = (
+				43D1805923F6BEE0009A7D17 /* Sources */,
+				43D1805A23F6BEE0009A7D17 /* Frameworks */,
+				43D1805B23F6BEE0009A7D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Liar's Dice";
+			productName = "Liar's Dice";
+			productReference = 43D1805D23F6BEE0009A7D17 /* Liar's Dice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43D1805523F6BEE0009A7D17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = CogMod;
+				TargetAttributes = {
+					43D1805C23F6BEE0009A7D17 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 43D1805823F6BEE0009A7D17 /* Build configuration list for PBXProject "Liar's Dice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43D1805423F6BEE0009A7D17;
+			productRefGroup = 43D1805E23F6BEE0009A7D17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43D1805C23F6BEE0009A7D17 /* Liar's Dice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43D1805B23F6BEE0009A7D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D1806D23F6BEE2009A7D17 /* LaunchScreen.storyboard in Resources */,
+				43D1806A23F6BEE2009A7D17 /* Assets.xcassets in Resources */,
+				43D1806823F6BEE0009A7D17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43D1805923F6BEE0009A7D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA21902C23FAC92E001CA86F /* ACTRWindowView.swift in Sources */,
+				43D1806523F6BEE0009A7D17 /* ViewController.swift in Sources */,
+				DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */,
+				43D1806123F6BEE0009A7D17 /* AppDelegate.swift in Sources */,
+				43D1807523F6C21A009A7D17 /* Dice.swift in Sources */,
+				43D1807723F6C5AD009A7D17 /* Player.swift in Sources */,
+				43D1806323F6BEE0009A7D17 /* SceneDelegate.swift in Sources */,
+				DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43D1806623F6BEE0009A7D17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D1806723F6BEE0009A7D17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43D1806B23F6BEE2009A7D17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D1806C23F6BEE2009A7D17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43D1806F23F6BEE2009A7D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43D1807023F6BEE2009A7D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43D1807223F6BEE2009A7D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Liar's Dice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.rug.student.cogmod.Liar-s-Dice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43D1807323F6BEE2009A7D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Liar's Dice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.rug.student.cogmod.Liar-s-Dice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43D1805823F6BEE0009A7D17 /* Build configuration list for PBXProject "Liar's Dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D1806F23F6BEE2009A7D17 /* Debug */,
+				43D1807023F6BEE2009A7D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D1807123F6BEE2009A7D17 /* Build configuration list for PBXNativeTarget "Liar's Dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D1807223F6BEE2009A7D17 /* Debug */,
+				43D1807323F6BEE2009A7D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43D1805523F6BEE0009A7D17 /* Project object */;
+}
