@@ -8,6 +8,11 @@
 
 import UIKit
 
+// color scheme
+// green       006600
+// light brown 99621E
+// dark brown  2F1000
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var typeOfDicePicker: UIPickerView!
