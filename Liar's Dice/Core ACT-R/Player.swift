@@ -43,4 +43,22 @@ class Player
     {
         for index in 0..<numberOfDiceInHand { _ = self.hand[index].roll() }
     }
+    
+    func getNumberOfDice() -> Int
+    {
+        return self.numberOfDiceInHand
+    }
+    
+    func getRollNumber(roll: Int) -> Int
+    {
+        var result = 0
+        for dice in hand
+        {
+            if dice.faceValue == roll
+            {
+                result += 1
+            }
+        }
+        return result
+    }
 }
