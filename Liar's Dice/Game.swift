@@ -29,23 +29,26 @@ class Game
         players = [player, opponent]
     }
     
-    func bid(player: Player, bidRoll: Int, bidNumber: Int)
+    func bid(bidRoll: Int, bidNumber: Int) -> Int
     {
         if (bidNumber < currentBidNumber)
         {
             print("[Error] Can't bid less than previous turns.")
+            return -1
         }
         else if (bidNumber == currentBidNumber)
         {
             if (bidRoll < currentBidRoll)
             {
                 print("[Error] Can't bid a roll lower than previous turns.")
+                return -1
             }
             else
             {
                 currentBidNumber = bidNumber
                 currentBidRoll = bidRoll
                 turnsPlayed += 1
+                return 1
             }
         }
         else
@@ -53,25 +56,62 @@ class Game
             currentBidNumber = bidNumber
             currentBidRoll = bidRoll
             turnsPlayed += 1
+            return 1
         }
     }
     
-    func callsLiar(target: Player, caller: Player)
+    func playerCallsLiar()
     {
         var sumRolls = 0
+        let target = opponent
+        let caller = player
+        
         for pl in players
         {
             sumRolls += pl.getRollNumber(roll: currentBidRoll)
         }
-        // Caller calls a wrong bluff
+        // player calls a wrong bluff
         if sumRolls > currentBidNumber
         {
             target.loseDice()
         }
         else
-        // Target was bluffing
+        // opponent was bluffing
         {
             caller.loseDice()
         }
+    }
+    
+    func opponentCallsLiar()
+    {
+        var sumRolls = 0
+        let target = player
+        let caller = opponent
+        
+        for pl in players
+        {
+            sumRolls += pl.getRollNumber(roll: currentBidRoll)
+        }
+        // player calls a wrong bluff
+        if sumRolls > currentBidNumber
+        {
+            target.loseDice()
+        }
+        else
+        // opponent was bluffing
+        {
+            caller.loseDice()
+        }
+    }
+    
+    func isOver() -> Bool {
+        if player.getNumberOfDice() == 0 {return true}
+        if opponent.getNumberOfDice() == 0 {return true}
+        return false
+    }
+    
+    func roll()
+    {
+        for pl in players {pl.rollHand()}
     }
 }
