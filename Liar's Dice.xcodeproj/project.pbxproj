@@ -19,6 +19,7 @@
 		DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */; };
 		DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */; };
 		DA78B1AF2409205200D4A8CE /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78B1AE2409205200D4A8CE /* StartScreenViewController.swift */; };
+		DA78B1B12409325100D4A8CE /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78B1B02409325100D4A8CE /* HowToPlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
 		DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
 		DA78B1AE2409205200D4A8CE /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		DA78B1B02409325100D4A8CE /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ACTRWindowView.swift; path = "../../ACT-R/Prisoner's Dilemma/ACTRWindowView.swift"; sourceTree = "<group>"; };
 		EA21903B23FAC93A001CA86F /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
 		EA21903C23FAC93A001CA86F /* BufferAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferAction.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				EA21901B23FAC92D001CA86F /* ACTRWindowView.swift */,
 				43D1806223F6BEE0009A7D17 /* SceneDelegate.swift */,
 				43D1806423F6BEE0009A7D17 /* ViewController.swift */,
+				DA78B1B02409325100D4A8CE /* HowToPlayViewController.swift */,
 				DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */,
 				DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */,
 				43D1806623F6BEE0009A7D17 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 				DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */,
 				43D1806123F6BEE0009A7D17 /* AppDelegate.swift in Sources */,
 				DA78B1AF2409205200D4A8CE /* StartScreenViewController.swift in Sources */,
+				DA78B1B12409325100D4A8CE /* HowToPlayViewController.swift in Sources */,
 				43D1807523F6C21A009A7D17 /* Dice.swift in Sources */,
 				43D1807723F6C5AD009A7D17 /* Player.swift in Sources */,
 				43D1806323F6BEE0009A7D17 /* SceneDelegate.swift in Sources */,

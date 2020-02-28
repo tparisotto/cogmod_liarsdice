@@ -90,26 +90,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAN-Rd-0dE">
-                                <rect key="frame" x="146" y="240" width="123" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="R6p-Fc-yNC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdP-sA-iKA">
-                                <rect key="frame" x="146" y="367" width="123" height="90"/>
+                                <rect key="frame" x="113" y="363" width="189" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="HOW TO PLAY">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="eSw-iH-xYx" kind="showDetail" id="3Ye-Bl-bsE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAN-Rd-0dE">
+                                <rect key="frame" x="113" y="231" width="189" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="R6p-Fc-yNC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -125,16 +127,16 @@
             </objects>
             <point key="canvasLocation" x="-1226.0869565217392" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--How To Play View Controller-->
         <scene sceneID="ALm-rz-kD8">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eSw-iH-xYx" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eSw-iH-xYx" customClass="HowToPlayViewController" customModule="Liar_s_Dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Zy-i3-cyL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-KL-A9H">
-                                <rect key="frame" x="34" y="78" width="347" height="741"/>
+                                <rect key="frame" x="34" y="78" width="347" height="627"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -307,11 +309,11 @@ If the number of the bid is </string>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content"> the number of the dices on the table, the bid is a lie. All the players who are correct lose one die.
+                                        <string key="content"> the number of the dices on the table, the bid is a lie. All the players who are correct lose one die.
 
 After this the round has ended. A new round starts with the remaining number of dices for each player, restarting the bidding with the player who lost the last round. For multiple players, this will be the person who was either correctly called a liar, or the player who incorrectly called another player a liar.
 
-After every round, all the players who were correct lose a die. The goal is to be the first to lose all of the dices from your cup. However, the game will be played until all players except one have no more dices remaining their cups.</mutableString>
+After every round, all the players who were correct lose a die. The goal is to be the first to lose all of the dices from your cup. However, the game will be played until all players except one have no more dices remaining their cups.</string>
                                         <attributes>
                                             <color key="NSBackgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -322,6 +324,18 @@ After every round, all the players who were correct lose a die. The goal is to b
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGh-WL-ckQ">
+                                <rect key="frame" x="136" y="753" width="143" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="eSw-iH-xYx" eventType="touchUpInside" id="Bwp-V0-fcc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vES-Kv-Spv"/>
