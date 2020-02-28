@@ -130,12 +130,12 @@
         <!--How To Play View Controller-->
         <scene sceneID="ALm-rz-kD8">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eSw-iH-xYx" customClass="HowToPlayViewController" customModule="Liar_s_Dice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" interfaceStyle="dark" id="eSw-iH-xYx" customClass="HowToPlayViewController" customModule="Liar_s_Dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Zy-i3-cyL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-KL-A9H">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-KL-A9H">
                                 <rect key="frame" x="34" y="78" width="347" height="627"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">

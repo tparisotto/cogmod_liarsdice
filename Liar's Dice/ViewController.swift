@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     
     let typeOfDicePickerAdapter = TypeOfDicePickerViewDelegateAndDataSource()
     let numberOfDicePickerAdapter = NumberOfDicePickerViewDelegateAndDataSource()
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

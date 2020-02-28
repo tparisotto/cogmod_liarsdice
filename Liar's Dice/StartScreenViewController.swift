@@ -18,6 +18,9 @@ class StartScreenViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var howToPlayButton: UIButton!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

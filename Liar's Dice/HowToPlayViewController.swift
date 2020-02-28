@@ -20,6 +20,10 @@ class HowToPlayViewController: UIViewController {
         self.dismiss(animated: true, completion: nil);
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
