@@ -13,12 +13,12 @@ class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate,
     var imageArray = [UIImage]()
     
     override init() {
-        imageArray.append(UIImage(named: "dice-six-faces-one")!)
-        imageArray.append(UIImage(named: "dice-six-faces-two")!)
-        imageArray.append(UIImage(named: "dice-six-faces-three")!)
-        imageArray.append(UIImage(named: "dice-six-faces-four")!)
-        imageArray.append(UIImage(named: "dice-six-faces-five")!)
-        imageArray.append(UIImage(named: "dice-six-faces-six")!)
+        imageArray.append(UIImage(named: "dice-six-faces-one-star-filled")!)
+        imageArray.append(UIImage(named: "dice-six-faces-two-filled")!)
+        imageArray.append(UIImage(named: "dice-six-faces-three-filled")!)
+        imageArray.append(UIImage(named: "dice-six-faces-four-filled")!)
+        imageArray.append(UIImage(named: "dice-six-faces-five-filled")!)
+        imageArray.append(UIImage(named: "dice-six-faces-six-filled")!)
     }
         
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var opponentRolledDiceStack: UIStackView!
     @IBOutlet weak var opponentRolledDiceBorder: UIView!
     
-    var diceFilenames = ["dice-six-faces-one", "dice-six-faces-two", "dice-six-faces-three", "dice-six-faces-four", "dice-six-faces-five", "dice-six-faces-six"]
+    var diceFilenames = ["dice-six-faces-one-star-filled", "dice-six-faces-two-filled", "dice-six-faces-three-filled", "dice-six-faces-four-filled", "dice-six-faces-five-filled", "dice-six-faces-six-filled"]
     
     let typeOfDicePickerAdapter = TypeOfDicePickerViewDelegateAndDataSource()
     let numberOfDicePickerAdapter = NumberOfDicePickerViewDelegateAndDataSource()
