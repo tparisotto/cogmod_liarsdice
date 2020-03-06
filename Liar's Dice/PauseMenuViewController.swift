@@ -15,7 +15,10 @@ import UIKit
 
 class PauseMenuViewController: UIViewController {
     
-    @IBOutlet weak var closePauseMenu: UIButton!
+    @IBOutlet weak var newGameButton: UIButton!
+    @IBOutlet weak var howToPlayButton: UIButton!
+    @IBOutlet weak var quitGameButton: UIButton!
+    
     @IBAction func closePauseMenuButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil);
     }
@@ -26,6 +29,9 @@ class PauseMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.newGameButton.layer.cornerRadius = 5
+        self.howToPlayButton.layer.cornerRadius = 5
+        self.quitGameButton.layer.cornerRadius = 5
     }
 
 }
