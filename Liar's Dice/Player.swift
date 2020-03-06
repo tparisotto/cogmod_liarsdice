@@ -10,14 +10,13 @@ import Foundation
 
 class Player
 {
-    let startingNumberOfDice = 6
     var numberOfDiceInHand: Int
     var hand: [Dice] = []
     
     init()
     {
-        self.numberOfDiceInHand = self.startingNumberOfDice
-        for _ in 0..<startingNumberOfDice { self.hand.append(Dice()) }
+        self.numberOfDiceInHand = 6
+        for _ in 0..<numberOfDiceInHand { self.hand.append(Dice()) }
     }
     
     func loseDice()
@@ -45,10 +44,6 @@ class Player
         for index in 0..<numberOfDiceInHand { _ = self.hand[index].roll() }
     }
     
-    func getNumberOfDice() -> Int
-    {
-        return self.numberOfDiceInHand
-    }
     
     func getRollNumber(roll: Int) -> Int
     {
@@ -58,5 +53,15 @@ class Player
             if die.faceValue == roll {sum += 1}
         }
         return sum
+    }
+    
+    func getHand() -> [Int]
+    {
+        var playerhand : [Int] = []
+        for die in hand
+        {
+            playerhand.append(die.faceValue)
+        }
+        return playerhand
     }
 }

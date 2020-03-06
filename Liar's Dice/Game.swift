@@ -17,13 +17,14 @@ class Game
     var diceInGame: Int
     var currentBidRoll: Int
     var currentBidNumber: Int
+
     
     init()
     {
         turnsPlayed = 0
         player.rollHand()
         opponent.rollHand()
-        diceInGame = player.getNumberOfDice() + opponent.getNumberOfDice()
+        diceInGame = player.hand.count + opponent.hand.count
         currentBidRoll = 0
         currentBidNumber = 0
         players = [player, opponent]
@@ -31,6 +32,17 @@ class Game
     
     func bid(bidRoll: Int, bidNumber: Int) -> Int
     {
+        if bidRoll < 1
+        {
+            print("[Error] Can't roll less than 1.")
+            return -1
+        }
+        if bidRoll > 6
+        {
+            print("[Error] Can't roll more than 6.")
+            return -1
+        }
+        
         if (bidNumber < currentBidNumber)
         {
             print("[Error] Can't bid less than previous turns.")
@@ -60,33 +72,33 @@ class Game
         }
     }
     
-    func playerCallsLiar()
+    func playerCallsLiar() -> (Bool,Int,Int)
     {
         var sumRolls = 0
-        let target = opponent
-        let caller = player
         
         for pl in players
         {
             sumRolls += pl.getRollNumber(roll: currentBidRoll)
         }
-        // player calls a wrong bluff
+        // player calls a wrong liar
+        print(sumRolls)
         if sumRolls > currentBidNumber
         {
-            target.loseDice()
+            player.loseDice()
+            return (false,sumRolls,currentBidRoll)
+            
         }
         else
         // opponent was bluffing
         {
-            caller.loseDice()
+            opponent.loseDice()
+            return (true,sumRolls,currentBidRoll)
         }
     }
     
-    func opponentCallsLiar()
+    func opponentCallsLiar() -> (Bool,Int,Int)
     {
         var sumRolls = 0
-        let target = player
-        let caller = opponent
         
         for pl in players
         {
@@ -95,18 +107,29 @@ class Game
         // player calls a wrong bluff
         if sumRolls > currentBidNumber
         {
-            target.loseDice()
+            opponent.loseDice()
+            return (false,sumRolls,currentBidRoll)
         }
         else
         // opponent was bluffing
         {
-            caller.loseDice()
+            player.loseDice()
+            return (true,sumRolls,currentBidRoll)
         }
+    }
+    
+    func getPlayerHand() -> [Int]
+    {
+        return player.getHand()
+    }
+    func getOpponentHand() -> [Int]
+    {
+        return opponent.getHand()
     }
     
     func isOver() -> Bool {
-        if player.getNumberOfDice() == 0 {return true}
-        if opponent.getNumberOfDice() == 0 {return true}
+        if player.hand.count == 0 {return true}
+        if opponent.hand.count == 0 {return true}
         return false
     }
     

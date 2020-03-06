@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Main
+public class Main
 {
     enum State {
         case start
@@ -26,6 +26,7 @@ class Main
     var gamestate : State
     var game : Game
     var currentPlayer : CurrentPlayer
+    var firstTurn : Bool
 
     
     init()
@@ -33,6 +34,7 @@ class Main
         gamestate = .start
         game = Game()
         currentPlayer = CurrentPlayer.allCases.randomElement()!
+        firstTurn = true
     }
     
     func play()
@@ -46,6 +48,9 @@ class Main
                 print("[INFO] The round is started.")
                 print("[INFO] Rolling the dice.")
                 game.roll()
+                game.currentBidRoll = 0
+                game.currentBidNumber = 0
+                var answerAccepted = false
                 switch currentPlayer {
                 case .player:
                     gamestate = .playerTurn
@@ -57,12 +62,19 @@ class Main
                 
 
             case .playerTurn:
+                print("Your hand is:")
+                print(game.getPlayerHand())
                 print("[INFO] Bidding phase.")
                 
                 // TODO: update with link to GUI
                 var bidAccepted = false
                 var answerAccepted = false
                 
+                if firstTurn == true
+                {
+                    answerAccepted = true
+                    firstTurn = false
+                }
                 while (!answerAccepted)
                 {
                     print("Do you want to call the opponent a liar?")
@@ -72,15 +84,20 @@ class Main
                         if answer_lc == "yes"
                         {
                             gamestate = .liar
+                            answerAccepted = true
                         }
                         else if answer_lc == "no"
                         {
                             answerAccepted = true
                         }
+                        else
+                        {
+                            print("[ERROR] Invalid answer.")
+                        }
                     }
-                    print("[ERROR] Invalid answer.")
+                    
                 }
-                while (!bidAccepted)
+                while (!bidAccepted && gamestate == .playerTurn)
                 {
                     print("Insert Roll bid:")
                     if let bidRoll = Int(readLine(strippingNewline: true)!)
@@ -94,7 +111,8 @@ class Main
                             }
                             else
                             {
-                                print(String(format:"[INFO] Player bids Roll:%i, %i", bidRoll, bidNum))
+                                print(String(format:"[INFO] Player bids Roll: %i, Number %i", bidRoll, bidNum))
+                                sleep(1)
                                 bidAccepted = true
                             }
                         }
@@ -108,8 +126,11 @@ class Main
                         print("[ERROR] Invalid bid.")
                     }
                 }
-                currentPlayer = .opponent
-                gamestate = .opponentTurn
+                if gamestate != .liar
+                {
+                    currentPlayer = .opponent
+                    gamestate = .opponentTurn
+                }
                 
                 
                 
@@ -117,10 +138,34 @@ class Main
                 switch currentPlayer {
                 case .player:
                     print("[INFO] Player calls opponent a Liar.")
-                    game.playerCallsLiar()
+                    let (win, sumRoll, biddedRoll) = game.playerCallsLiar()
+                    if win
+                    {
+                        print(String(format: "There are %i dice with roll %i.", sumRoll, biddedRoll))
+                        sleep(1)
+                        print("You lose the round. The opponent lost a dice.")
+                    }
+                    else
+                    {
+                        print(String(format: "There are %i dice with roll %i.", sumRoll, biddedRoll))
+                        sleep(1)
+                        print("You win the round. You lost a dice.")
+                    }
                 case .opponent:
                     print("[INFO] Opponent calls player a Liar.")
-                    game.opponentCallsLiar()
+                    let (win, sumRoll, biddedRoll) = game.opponentCallsLiar()
+                    if win
+                    {
+                        print(String(format: "There are %i dice with roll %i.", sumRoll, biddedRoll))
+                        sleep(1)
+                        print("You win the round. You lost a dice.")
+                    }
+                    else
+                    {
+                        print(String(format: "There are %i dice with roll %i.", sumRoll, biddedRoll))
+                        sleep(1)
+                        print("You lost the round. Opponent lost a dice.")
+                    }
                 }
                 if game.isOver() { gamestate = .finished }
                 else { gamestate = .start }
@@ -132,13 +177,14 @@ class Main
                 let bidRoll = Int.random(in: 1...6)
                 let bidNum = game.currentBidNumber+1
                 _ = game.bid(bidRoll: bidRoll, bidNumber: bidNum)
-                print(String(format:"[INFO] Opponent bids Roll:%i, %i", bidRoll, bidNum))
+                print(String(format:"[INFO] Opponent bids Roll: %i, Number %i", bidRoll, bidNum))
+                sleep(1)
                 gamestate = .playerTurn
                 
                 
                 
                 
-            case . finished:
+            case .finished:
                 print("[INFO] The game has ended.")
                 exit(0)
             case .error:
