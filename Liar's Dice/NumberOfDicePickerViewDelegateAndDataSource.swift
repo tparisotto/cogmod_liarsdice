@@ -10,7 +10,7 @@ import UIKit
 
 class NumberOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate, UIPickerViewDataSource  {
     
-    public var numberOfDicePickerData = ["1", "2", "3", "4", "5", "6"]
+    public var numberOfDicePickerData = [Int]()
     
     // the number of columns of data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -24,6 +24,6 @@ class NumberOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegat
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return numberOfDicePickerData[row]
+        return String(numberOfDicePickerData[row])
     }
 }

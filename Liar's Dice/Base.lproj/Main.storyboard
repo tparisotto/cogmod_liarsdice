@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-EA-1ys">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-EA-1ys">
                                 <rect key="frame" x="56" y="109" width="100" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice-six-faces-five" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-N1-fC9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-N1-fC9">
                                 <rect key="frame" x="164" y="109" width="100" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-8Q-xEs">
-                                <rect key="frame" x="42" y="44" width="129" height="41"/>
+                                <rect key="frame" x="20" y="44" width="129" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -111,6 +111,7 @@
                     <connections>
                         <outlet property="betButton" destination="CGr-fO-eBb" id="Mel-Ie-xs1"/>
                         <outlet property="callBluffButton" destination="KRP-oZ-Cl0" id="9rf-sX-OoB"/>
+                        <outlet property="menuButton" destination="G6f-8Q-xEs" id="7Ah-t2-0zJ"/>
                         <outlet property="numberOfDicePicker" destination="Qu4-tc-4qS" id="RmM-57-GM2"/>
                         <outlet property="opponentBetNumberOfDiceView" destination="gUg-EA-1ys" id="GfR-gH-fA3"/>
                         <outlet property="opponentBetTypeOfDiceView" destination="Jcn-N1-fC9" id="YvR-sf-bnD"/>
@@ -388,10 +389,10 @@ After every round, all the players who were correct lose a die. The goal is to b
             </objects>
             <point key="canvasLocation" x="-743.47826086956525" y="912.72321428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Pause Menu View Controller-->
         <scene sceneID="2oi-xe-7gg">
             <objects>
-                <viewController id="6Xt-ry-pyU" sceneMemberID="viewController">
+                <viewController id="6Xt-ry-pyU" customClass="PauseMenuViewController" customModule="Liar_s_Dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XlS-QE-M2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,10 +424,25 @@ After every round, all the players who were correct lose a die. The goal is to b
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="onn-Fy-xWE">
+                                <rect key="frame" x="149" y="20" width="116" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="tintColor" white="1" alpha="0.51230736301369861" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="48"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePauseMenuButton:" destination="6Xt-ry-pyU" eventType="touchUpInside" id="JRY-Fl-Y8V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="60T-Wt-eGr"/>
                     </view>
+                    <connections>
+                        <outlet property="closePauseMenu" destination="onn-Fy-xWE" id="LPl-Ns-rys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur9-op-RwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -434,6 +450,6 @@ After every round, all the players who were correct lose a die. The goal is to b
         </scene>
     </scenes>
     <resources>
-        <image name="dice-six-faces-five" width="512" height="512"/>
+        <image name="chevron.down" catalog="system" width="64" height="36"/>
     </resources>
 </document>

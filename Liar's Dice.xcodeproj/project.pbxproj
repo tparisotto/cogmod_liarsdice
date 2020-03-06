@@ -18,6 +18,7 @@
 		43E36B112409558A00134CA9 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E36B0D2409558A00134CA9 /* Dice.swift */; };
 		43E36B122409558A00134CA9 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E36B0E2409558A00134CA9 /* util.swift */; };
 		43E36B132409558A00134CA9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E36B0A2409558A00134CA9 /* Game.swift */; };
+		DA49352124126ECD0029CB1D /* PauseMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49352024126ECD0029CB1D /* PauseMenuViewController.swift */; };
 		DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */; };
 		DA54C82A23FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */; };
 		DA78B1AF2409205200D4A8CE /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78B1AE2409205200D4A8CE /* StartScreenViewController.swift */; };
@@ -38,6 +39,7 @@
 		43E36B0C2409558A00134CA9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		43E36B0D2409558A00134CA9 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 		43E36B0E2409558A00134CA9 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		DA49352024126ECD0029CB1D /* PauseMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuViewController.swift; sourceTree = "<group>"; };
 		DA54C82423FABB7A004D57A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
 		DA54C82923FAC22B004D57A9 /* TypeOfDicePickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDicePickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				43D1806E23F6BEE2009A7D17 /* Info.plist */,
 				43D1806B23F6BEE2009A7D17 /* LaunchScreen.storyboard */,
 				43D1806623F6BEE0009A7D17 /* Main.storyboard */,
+				DA49352024126ECD0029CB1D /* PauseMenuViewController.swift */,
 				43E36B0B2409558A00134CA9 /* Main.swift */,
 				DA54C82723FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift */,
 				43E36B0C2409558A00134CA9 /* Player.swift */,
@@ -222,6 +225,7 @@
 				43E36B122409558A00134CA9 /* util.swift in Sources */,
 				43D1806323F6BEE0009A7D17 /* SceneDelegate.swift in Sources */,
 				DA54C82823FAC056004D57A9 /* NumberOfDicePickerViewDelegateAndDataSource.swift in Sources */,
+				DA49352124126ECD0029CB1D /* PauseMenuViewController.swift in Sources */,
 				43E36B112409558A00134CA9 /* Dice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

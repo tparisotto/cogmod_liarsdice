@@ -13,12 +13,6 @@ class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate,
     var imageArray = [UIImage]()
     
     override init() {
-        imageArray.append(UIImage(named: "dice-six-faces-one-star-filled")!)
-        imageArray.append(UIImage(named: "dice-six-faces-two-filled")!)
-        imageArray.append(UIImage(named: "dice-six-faces-three-filled")!)
-        imageArray.append(UIImage(named: "dice-six-faces-four-filled")!)
-        imageArray.append(UIImage(named: "dice-six-faces-five-filled")!)
-        imageArray.append(UIImage(named: "dice-six-faces-six-filled")!)
     }
         
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -26,7 +20,7 @@ class TypeOfDicePickerViewDelegateAndDataSource: NSObject, UIPickerViewDelegate,
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 6
+        return imageArray.count
     }
 
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
