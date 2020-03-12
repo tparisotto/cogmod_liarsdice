@@ -22,8 +22,8 @@ class PauseMenuViewController: UIViewController {
         self.dismiss(animated: true, completion: nil);
     }
     
-    @IBAction func quitGameButton(_ sender: Any) {
-        
+    @IBAction func newGameButton(_ sender: Any) {
+        createAlertAndGoToNewGame(errorTitle: "Start new game?", errorMessage: "Starting a new game will delete your current progress!", className: self)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -35,5 +35,17 @@ class PauseMenuViewController: UIViewController {
         self.newGameButton.layer.cornerRadius = 5
         self.howToPlayButton.layer.cornerRadius = 5
     }
-
+    
+    func createAlertAndGoToNewGame(errorTitle: String, errorMessage: String, className: UIViewController) {
+        let alertController = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) -> Void in
+            //The (withIdentifier: "VC2") is the Storyboard Segue identifier.
+            self.performSegue(withIdentifier: "VC2", sender: self)
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil)
+        
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        self.present(alertController, animated: true, completion: nil)
+    }
 }

@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="165"/>
+            <point key="canvasLocation" x="-190" y="139"/>
         </scene>
         <!--Start Screen View Controller-->
         <scene sceneID="4aQ-KW-mQ2">
@@ -134,21 +134,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdP-sA-iKA">
-                                <rect key="frame" x="113" y="714" width="189" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                <state key="normal" title="HOW TO PLAY">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eSw-iH-xYx" kind="showDetail" id="3Ye-Bl-bsE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAN-Rd-0dE">
-                                <rect key="frame" x="113" y="637" width="189" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="107" y="637" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <state key="normal" title="PLAY">
@@ -169,6 +157,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdP-sA-iKA">
+                                <rect key="frame" x="107" y="707" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <state key="normal" title="HOW TO PLAY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eSw-iH-xYx" kind="showDetail" id="3Ye-Bl-bsE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bX7-3o-mXq"/>
@@ -400,7 +400,7 @@ After every round, all the players who were correct lose a die. The goal is to b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3V-Mz-h3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743.47826086956525" y="912.72321428571422"/>
+            <point key="canvasLocation" x="-191" y="864"/>
         </scene>
         <!--Pause Menu View Controller-->
         <scene sceneID="2oi-xe-7gg">
@@ -423,20 +423,20 @@ After every round, all the players who were correct lose a die. The goal is to b
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afr-2N-s8h">
-                                <rect key="frame" x="103" y="490" width="209" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="107" y="591" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <state key="normal" title="NEW GAME">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="61o-Aj-8cV"/>
+                                    <action selector="newGameButton:" destination="6Xt-ry-pyU" eventType="touchUpInside" id="Fjc-RX-f5T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p77-7a-sQM">
-                                <rect key="frame" x="103" y="568" width="209" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="107" y="661" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <state key="normal" title="HOW TO PLAY">
@@ -446,6 +446,13 @@ After every round, all the players who were correct lose a die. The goal is to b
                                     <segue destination="eSw-iH-xYx" kind="show" id="vnt-Ci-cOy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME PAUSED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEc-PX-Pvu">
+                                <rect key="frame" x="20" y="388" width="374" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="60T-Wt-eGr"/>
@@ -453,11 +460,12 @@ After every round, all the players who were correct lose a die. The goal is to b
                     <connections>
                         <outlet property="howToPlayButton" destination="p77-7a-sQM" id="M7t-vc-nz0"/>
                         <outlet property="newGameButton" destination="Afr-2N-s8h" id="fnQ-ps-Yoh"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="VC2" id="gvN-3x-5Dz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur9-op-RwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1310" y="56"/>
+            <point key="canvasLocation" x="840.57971014492762" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
@@ -465,8 +473,7 @@ After every round, all the players who were correct lose a die. The goal is to b
         <image name="hiclipart.com" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AV6-5q-WVb"/>
         <segue reference="vnt-Ci-cOy"/>
-        <segue reference="61o-Aj-8cV"/>
+        <segue reference="gvN-3x-5Dz"/>
     </inferredMetricsTieBreakers>
 </document>
