@@ -15,7 +15,6 @@ import UIKit
 
 class HowToPlayViewController: UIViewController {
     
-    
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil);
     }
@@ -26,8 +25,6 @@ class HowToPlayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
     }
 
 }

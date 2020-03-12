@@ -61,20 +61,23 @@ class ViewController: UIViewController {
         self.numberOfDicePicker.delegate = numberOfDicePickerAdapter
         self.numberOfDicePicker.dataSource = numberOfDicePickerAdapter
         self.numberOfDicePicker.setValue(UIColor.white, forKeyPath: "textColor")
-        self.numberOfDicePicker.isHidden = true
+//        self.numberOfDicePicker.isHidden = true
         
         self.typeOfDicePicker.delegate = typeOfDicePickerAdapter
         self.typeOfDicePicker.dataSource = typeOfDicePickerAdapter
         self.typeOfDicePicker.setValue(UIColor.white, forKeyPath: "textColor")
-        self.typeOfDicePicker.isHidden = true
+//        self.typeOfDicePicker.isHidden = true
         
         displayDice(for: 0, dice: [1,4,3])
         displayDice(for: 1, dice: [1,2,3])
+        displayAvailablePlayerBetDice(dice: [1,3])
+        displayAvailablePlayerBetNumbers(numbers: [2,4])
     }
     
     // Player 0 is user
     // Other players are AI opponents
     // Will probably need a switch statement
+    // TODO: Add empty dice images
     func displayDice(for player: Int, dice:[Int]) {
         for die in dice {
             let image = UIImageView(image: UIImage(named: diceFilenames[die]))
@@ -112,6 +115,17 @@ class ViewController: UIViewController {
         typeOfDicePickerAdapter.imageArray = imageArray
         self.typeOfDicePicker.isHidden = false
         typeOfDicePicker.reloadAllComponents()
+    }
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?){
+        if motion == .motionShake {
+            print("Shake Gesture Detected")
+            //show some alert here
+        }
     }
 }
 
